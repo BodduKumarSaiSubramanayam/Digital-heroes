@@ -7,6 +7,9 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
+app.get('/', (req, res) => {
+  res.send('Aetheria Botanical Backend is running successfully.');
+});
 
 const products = [
   {
